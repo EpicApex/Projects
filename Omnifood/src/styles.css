@@ -1,7 +1,54 @@
 /* You can add global styles to this file, and also import other style files */
+
+
 /* h1 = seclector ( will select all h1 to the rule */
+
+
 /* */
 
-h1 { 
-    color: green;
+* {
+    /* margin -> border -> padding -> content (Width x Height)*/
+    /* white spaces between boxes */
+    margin: 0px;
+    /* white space between the content to the margin*/
+    padding: 0px;
+    /* Box Element shadowing - to identify the boxes in a page */
+    box-shadow: 0.3px 0.3px #ff00cc;
+    /* Refers to the border of the box only without changing the content\width x height\padding\border\margin */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 10px;
+}
+
+h1,
+h2 {
+    color: #000000;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+/* paragraph - main-text class */
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 100px;
+}
+
+
+/* paragraph - author-text class */
+
+.author-text {
+    font-size: 22px;
 }
