@@ -13,9 +13,16 @@
     /* white space between the content to the margin*/
     padding: 0px;
     /* Box Element shadowing - to identify the boxes in a page */
-    box-shadow: 0.3px 0.3px #ff00cc;
+    /*box-shadow: 3px 3px #ff00cc;*/
     /* Refers to the border of the box only without changing the content\width x height\padding\border\margin */
-    box-sizing: border-box;
+    box-sizing: border-box; 
+    /*border: 1px solid red;*/
+}
+
+.clearfix:after {
+    content:    "";
+    display:    table;
+    clear:      both;
 }
 
 body {
@@ -24,7 +31,7 @@ body {
 }
 
 h1,h2 {
-    color: #000000;
+    color: #60ec0fc9;
 }
 
 h1 {
@@ -50,12 +57,53 @@ h2 {
 
 .author-text {
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 /* div - container class */
 
 .container {
-    width: 1140px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 1240px;
+    margin: 20px auto 0 auto;
+}
+
+/* div - blog-post class */
+.blog-post {
+    width: 75%;
+    float: left;
+    padding: 10px;
+}
+
+/* div - other-posts class */
+.other-posts {
+    width: 25%;
+    float: right;
+    padding: 10px;
+}
+
+.other {
+    margin-bottom: 30px;
+    border: 5px solid rgba(255,33,22,0.88)
+}
+
+/* div - author-box class */
+.author-box {
+    padding-top: 20px;
+    padding-left: 10px;
+    border-top: 1px solid rgba(58, 58, 58, 0.808)
+}
+
+.author-box img{
+    height: 100px;
+    width: 100px;
+    border-radius: 31%;
+    float: left;
+}
+
+.blog-post img{
+    height: 100px;
+    width: 200px;
+    float: left;
 }
