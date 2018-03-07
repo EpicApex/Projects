@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Global html settings - basic settings for all elements */
+html {
+  background-color: #fff;
+  color: #555;
+  /* sans-serif no apostrophe -> reserved word in the css file for offline browsing font - if others doesnt exist */
+  font-family: 'Lato', 'Arial', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 840px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+header {
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.6) , rgba(9, 9, 9, 0.6)), url(D:/LocalProjects/vsCode/angularProjects/Omnifood/inhouse/CSS/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%)
+}
+
+h1{
+  margin: 0;
+  color: #fff;
+  font-size: 240%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 8px;
+}
+
+/* Buttons section */
+
+.btn {
+  display: inline-block;
+  padding: 10x 30px;
+  border: 5px solid rgba(255,33,22,0.88);
+}
